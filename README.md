@@ -1,18 +1,28 @@
-# Newsfeed simple Rest API * Test
+# Newsfeed simple Rest API + Tests
 
-Tutorial: https://www.youtube.com/watch?v=LOn1GUsjOF4&list=WL&index=16
+Simple CRUD with some automated Tests.
 
-Using Makefile
+Tutorial: [REST API with Go / Gin + Some Simple Tests](https://www.youtube.com/watch?v=LOn1GUsjOF4) by [DavidAlsh](https://www.youtube.com/@DavidAlsh)
 
-Reference: https://opensource.com/article/18/8/what-how-makefile
+To start the server run:
 
-## Folders
+```
+make dev
+```
 
-- plataform: files/dependencies/packages with very general pourpose that would be used in multiples projects
+## Endpoints
 
-## Usefull commands
+| Route | Method | Description | Expected Status |
+|:--|:--:|:--:|:--:|
+| /newsfeed | POST | Create a Item| 204 |
+| /newsfeed | GET | Retrieve a list of Items| 200 |
 
-### Tests
+## Tests
+
+**Commands:**
 
 - `go test ./...`: execute all tests
 - `go test -cover ./...`: execute the tests and show the % coverage from them
+
+### References: 
+- **Using Makefile**: https://opensource.com/article/18/8/what-how-makefile
