@@ -10,7 +10,7 @@ type Adder interface {
 
 type Item struct {
 	Title string `json:"title"`
-	Post  string `json:"post`
+	Post  string `json:"post"`
 }
 
 type Repo struct {
